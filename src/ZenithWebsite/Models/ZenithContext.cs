@@ -17,8 +17,7 @@ namespace ZenithWebsite.Models
        
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Event> Events { get; set; }
-        public DbSet<UserRoles> UserRoles { get; set; }
-        public DbSet<IdentityRoles> IdentityRoles { get; set; }
+       
 
 
     }
