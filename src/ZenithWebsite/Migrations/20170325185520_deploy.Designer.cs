@@ -8,9 +8,10 @@ using ZenithWebsite.Models;
 namespace ZenithWebsite.Migrations
 {
     [DbContext(typeof(ZenithContext))]
-    partial class ZenithContextModelSnapshot : ModelSnapshot
+    [Migration("20170325185520_deploy")]
+    partial class deploy
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.0.1")

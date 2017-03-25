@@ -260,11 +260,17 @@ C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Data\Migrations\00000000000000
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Data\Migrations\ApplicationDbContextModelSnapshot.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325030758_first.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325030758_first.Designer.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325185520_deploy.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325185520_deploy.Designer.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325214641_second.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\20170325214641_second.Designer.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Migrations\ZenithContextModelSnapshot.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\Activity.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\ApplicationUser.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\Event.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\IdentityRoles.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\SeedData.cs
+C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\UserRoles.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\ZenithContext.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\AccountViewModels\ExternalLoginConfirmationViewModel.cs
 C:\ZenithSociety2\ZenithWebsite\src\ZenithWebsite\Models\AccountViewModels\ForgotPasswordViewModel.cs

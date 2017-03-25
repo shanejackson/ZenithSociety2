@@ -51,6 +51,15 @@ namespace ZenithWebsite
                 .AddEntityFrameworkStores<ZenithContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
+
             // Configure Identity to use the same JWT claims as OpenIddict instead
             // of the legacy WS-Federation claims it uses by default (ClaimTypes),
             // which saves you from doing the mapping in your authorization controller.
@@ -110,10 +119,14 @@ namespace ZenithWebsite
 
             app.UseIdentity();
 
+            // global policy - assign here or on each controller
+            app.UseCors("CorsPolicy");
+
+
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
             // Register the validation middleware, that is used to decrypt
-    // the access tokens and populate the HttpContext.User property.
-    app.UseOAuthValidation();
+            // the access tokens and populate the HttpContext.User property.
+            app.UseOAuthValidation();
     // Register the OpenIddict middleware.
     app.UseOpenIddict();
     app.UseMvcWithDefaultRoute();
