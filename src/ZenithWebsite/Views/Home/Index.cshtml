@@ -1,24 +1,33 @@
 ﻿@{
-    ViewBag.Title = "Home";
-    var currentDate = "";
+    ViewData["Title"] = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>Zenith Society</h1>
-    <p class="lead">These are the activities happening this week.</p>
+<div class="text-center container">
+
+    <h2>Events for the Week of @ViewBag.StartOfWeek</h2>
+
+    @if (ViewBag.Week.Count == 0)
+    {
+        <p>There are no events for this week.</p>
+    }
+
+    <table class="table table-bordered ">
+
+        @foreach (var date in ViewBag.Week)
+            {
+            <tr>
+                <td class="bg-success" colspan="4">@date.Key</td>
+            </tr>
+
+            foreach (var events in date.Value)
+            {
+                <tr>
+                    <td colspan="1"> @events.EventFrom.ToShortTimeString() - @events.ToDate.ToShortTimeString()</td>
+                    <td colspan="4"> @events.Activity.ActivityDescription</td>
+                </tr>
+            }
+
+        }
+    </table>
+
 </div>
-
-<table class="table">
-    <!--
-    <tr>
-        <th colspan="2">
-            Date
-        </th>
-    </tr>
-    -->
-
-    
-
-
-
-</table>
