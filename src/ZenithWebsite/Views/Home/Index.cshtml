@@ -22,8 +22,8 @@
             foreach (var events in date.Value)
             {
                 <tr>
-                    <td colspan="1"> @events.EventFrom.ToShortTimeString() - @events.ToDate.ToShortTimeString()</td>
-                    <td colspan="4"> @events.Activity.ActivityDescription</td>
+                    <td colspan="1"> @events.EventFrom.ToShortTimeString() - @events.EventTo.ToShortTimeString()</td>
+                    <td colspan="4"> @events.Activity.Description</td>
                 </tr>
             }
 
