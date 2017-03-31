@@ -1,0 +1,47 @@
+<div class="container body-content">
+
+
+
+  <h2>Log in.</h2>
+  <div class="row">
+    <div class="col-md-8">
+      <section id="loginForm">
+        <form action="/Account/Login" class="form-horizontal" method="post" role="form" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="4TjuzGcCT7W6ZtSJibQJZlbJ7XRgsKaMDA1jtecxib4AHacaFH09LSPD2rhbf1jO45w75bewhwmOSpa4ogNtnNyPOrJWvRXnueKm-xLOHN41">
+          <h4>Use a local account to log in.</h4>
+          <hr>
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="UserName">User Name</label>
+            <div class="col-md-10">
+              <input class="form-control" data-val="true" data-val-required="The User Name field is required." id="UserName" name="UserName"
+                type="text" value="">
+              <span class="field-validation-valid text-danger" data-valmsg-for="UserName" data-valmsg-replace="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-md-2 control-label" for="Password">Password</label>
+            <div class="col-md-10">
+              <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password"
+                type="password">
+              <span class="field-validation-valid text-danger" data-valmsg-for="Password" data-valmsg-replace="true"></span>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+              <div class="checkbox">
+                <input data-val="true" data-val-required="The Remember me? field is required." id="RememberMe" name="RememberMe" type="checkbox"
+                  value="true"><input name="RememberMe" type="hidden" value="false">
+                <label for="RememberMe">Remember me?</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+              <input type="submit" value="Log in" class="btn btn-default">
+            </div>
+          </div>
+          <p>
+            <a href="/register">Register as a new user</a>
+          </p>
+        </form>
+      </section>
+    </div>
