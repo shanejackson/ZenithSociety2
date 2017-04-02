@@ -57,7 +57,7 @@ namespace ZenithWebsite
                     builder => builder.AllowAnyOrigin()
                     .AllowAnyMethod()
                     .AllowAnyHeader()
-                    .AllowCredentials());
+                    .AllowCredentials().Build());
             });
 
             // Configure Identity to use the same JWT claims as OpenIddict instead
@@ -121,6 +121,7 @@ namespace ZenithWebsite
 
             // global policy - assign here or on each controller
             app.UseCors("CorsPolicy");
+
 
 
             // Add external authentication middleware below. To configure them please see http://go.microsoft.com/fwlink/?LinkID=532715
