@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ZenithWebsite.Models;
+using ZenithWebsite.Models.RoleViewModels;
 
 
 namespace ZenithWebsite.Models
@@ -17,6 +18,7 @@ namespace ZenithWebsite.Models
        
         public DbSet<Activity> Activities { get; set; }
         public DbSet<Event> Events { get; set; }
+        public DbSet<IdentityRoleViewModel> IdentityRoleViewModel { get; set; }
        
 
 
